@@ -10,14 +10,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-TOR_PASSWORD = 'hiwan0.0'
-CHROMEDRIVER_PATH = r'C:\Users\xliu9\Desktop\ezlife\Python-ezlife\楽天seo自動化\chromedriver-win64\chromedriver.exe'
+TOR_PASSWORD = 'your_password_here'
+CHROMEDRIVER_PATH = CHROMEDRIVER_PATH = r'C:/path/to/chromedriver.exe'
 KEYWORDS = [
-    "ペットドライヤーハウス 5匹用",
-    "ペットドライヤーハウス HRP",
-    "給水器 HRP",
-    "給水器 5匹用"
+    "kw1",
+    "kw2",
+    "kw3",
+    "kw4"
 ]
+
 
 def change_tor_ip():
     try:
