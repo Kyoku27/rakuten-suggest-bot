@@ -1,4 +1,4 @@
-# 🛠️ Rakuten SEO Bot - IP自换+关键词点击脚本
+# 🛠️ Rakuten Suggest Trigger - IP自换 + 关键词点击脚本
 
 这是一个用于**模拟用户搜索和点击行为**的自动化 SEO 工具，支持通过 Tor 网络动态更换 IP，访问乐天搜索页面并执行关键词搜索与点击。可用于自然排名干预测试。
 
@@ -14,14 +14,12 @@
 ## 📁 项目结构
 
 ```
-rakuten-seo-bot/
+rakuten-suggest-trigger/
 ├── rakuten_search_click.py       ← 主程序（包含点击行为）
 ├── iptest.py                     ← 用于测试 VPN / Tor 出口 IP
 ├── .gitignore                    ← 忽略日志、驱动、缓存
 ├── README.md                     ← 当前说明文件
-├── tor_config/
-│   ├── torrc.example             ← Tor 配置样例（含控制口令）
-│   └── tor_password_hash.txt     ← 你的控制口令哈希
+├── torrc.example                 ← Tor 配置样例（含控制口令哈希占位）
 └── chromedriver-win64/           ← ChromeDriver 目录（不上传，仅说明）
 ```
 
@@ -33,6 +31,9 @@ rakuten-seo-bot/
    - 9050：SOCKS5 代理端口
    - 9051：Tor 控制端口
 4. 配置 ChromeDriver 路径
+
+⚠️ 请使用 tor.exe --hash-password yourpassword 生成你自己的 HashedControlPassword，并替换 torrc.example 中占位内容。
+
 
 ## 🖥️ 安装依赖
 
@@ -50,7 +51,7 @@ python rakuten_search_click.py
 
 ## 📝 日志格式示例
 
-Sat Jun 07 21:18:10 2025 | IP: 185.220.101.33 | Keyword: ペットブロワー HRP
+Sat Jun 07 21:18:10 2025 | IP: 185.220.101.33 | Keyword: kw3
 
 ## ⚠️ 注意事项
 
