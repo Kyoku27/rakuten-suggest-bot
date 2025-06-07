@@ -1,3 +1,14 @@
+# torrc.example
+
+# Tor 控制端口配置
 ControlPort 9051
-HashedControlPassword 16:95C823A5F01D531B60AD93CA42770B9B0EC542C5EAC2239683E275782B
+
+# 请使用以下命令生成你自己的哈希控制口令，并替换下面这行：
+# tor.exe --hash-password your_password
+# 生成结果示例：
+# HashedControlPassword 16:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+HashedControlPassword 16:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# 启用 Cookie 认证（可选）
 CookieAuthentication 1
